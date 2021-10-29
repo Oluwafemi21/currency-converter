@@ -1,0 +1,115 @@
+:root {
+    --green: #00BF57;
+    --btn:rgba(87, 90, 137, 0.719);
+    --black:#161716;
+}  
+
+body{
+    margin: 0 auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 100%;
+}
+
+main{
+    width: 80%;
+    height: 90vh;
+    background-image: url(currency.svg);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: left;
+    background-size: contain;
+}
+
+header{
+    text-align: center;
+}
+
+header > h2{
+    font-size: 40px;
+    color: var(--black);
+}
+
+header > h2 > span{
+    color: var(--green);
+}
+
+.container{
+    margin:60px auto 0;
+    width: 50%;
+    height: 50vh;
+    position: relative;
+}
+
+.card1,.card2{
+    height: 100%;
+    width: 48%;
+    position: absolute;
+    top: 0;
+    right: -90%;
+    background-color: var(--green);
+    color:white;
+    margin: 0 30px;
+    padding: 12px;
+    border-radius: 8px;
+    z-index: 1;
+    box-shadow: 0 6px 6px var(--black);
+}
+
+.card1 h2,.card2 h2{
+    text-align: center;
+}
+
+.card1 input,.card2 input{
+    background: transparent;
+    font-size: 18px;
+    border:none;
+    border-bottom: 2px solid whitesmoke;
+    width: 80px;
+    color: white;
+    font-weight: 500;
+}
+
+.card1 input:focus,.card2 input:focus{
+    outline: none;
+}
+
+.result,.dollar-result{
+    font-weight: 600;
+    color:black;
+}
+
+.btn-conv{
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 600;
+    background-color: var(--btn);
+    color: whitesmoke;
+    border: none;
+    margin-top: 20px;
+    cursor: pointer;
+    letter-spacing: 0.3px;
+    padding: 7px 11px;
+    border-radius: 4px;
+}
+
+i{
+    cursor: pointer;
+    font-size: 25px;
+}
+
+i:hover{
+    color:var(--btn);
+}
+
+.visible{
+    display: none;
+}
+
+footer{
+    background-color: var(--green);
+    text-align: center;
+    font-size: 17px;
+    color: var(--black);
+    padding: 6px;
+    font-weight: 400;
+}

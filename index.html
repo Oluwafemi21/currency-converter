@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="hand.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Currency Converter</title>
+</head>
+<body>
+    <main>
+        <header>
+            <h2>Currency <span>Converter</span></h2>
+        </header>
+        
+        <div class="container">
+            <div class="card1">
+                <h2>Naira to Dollars</h2>
+                <p>The rate of Naira to Dollars is 0.0024372</p>
+                <h4>Convert your Naira to Dollar</h4>
+                <input type="text" id="textField"> <br>
+                <button class="btn-conv" onclick="nToD()">Convert</button>
+                <p class="result"></p>
+                <div class="link">
+                    Click arrow to convert Dollars to Naira
+                    <i class="bi bi-arrow-right" onclick="front()"></i>
+                </div>
+            </div>
+            <div class="card2 visible">
+                <h2>Dollars to Naira</h2>
+                <p>The rate of Dollar to Naira is 410.31</p>
+                <h4>Convert your Dollar to Naira</h4>
+                <input type="text" id="field"> <br>
+                <button class="btn-conv" onclick="dToN()">Convert</button>
+                <p class="dollar-result"></p>
+                <div class="link">
+                    <i class="bi bi-arrow-left" onclick="back()"></i>
+                    Click arrow to convert Naira to Dollars
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        This website was made by Fexavier &copy; <span class="year"></span>
+    </footer>
+    <script type='text/javascript' src="main.js"></script>
+</body>
+</html>
