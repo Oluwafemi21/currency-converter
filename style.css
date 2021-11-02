@@ -159,6 +159,7 @@ footer{
 @media only screen  and (max-device-width : 580px){
     body{
         height:fit-content;
+    }
     img{
         display: none;
     }
