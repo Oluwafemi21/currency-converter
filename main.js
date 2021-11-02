@@ -1,12 +1,12 @@
 function nToD(){
     let naira = document.getElementById('textField').value;
-    let dollar = parseInt(naira) * 0.0024372;
+    let dollar = naira * 0.0017543;
     document.querySelector('.result').textContent = `#${naira} => $${dollar.toFixed(2)}`;
 }
 
 function dToN(){
     let dollar = document.getElementById('field').value;
-    let naira = parseInt(dollar) * 410.31;
+    let naira = dollar * 570;
     document.querySelector('.dollar-result').textContent = `$${dollar} => #${naira.toFixed(2)}`;
 }
 
