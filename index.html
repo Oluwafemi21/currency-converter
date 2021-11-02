@@ -10,17 +10,18 @@
     <title>Currency Converter</title>
 </head>
 <body>
-    <main>
+
+    <div class="container">
         <header>
             <h2>Currency <span>Converter</span></h2>
         </header>
-        
-        <div class="container">
+        <main>
+            <img src="currency.svg" alt="">
             <div class="card1">
                 <h2>Naira to Dollars</h2>
                 <p>The rate of Naira to Dollars is 0.0024372</p>
                 <h4>Convert your Naira to Dollar</h4>
-                <input type="text" id="textField"> <br>
+                <input type="number" id="textField" required> <br>
                 <button class="btn-conv" onclick="nToD()">Convert</button>
                 <p class="result"></p>
                 <div class="link">
@@ -30,9 +31,9 @@
             </div>
             <div class="card2 visible">
                 <h2>Dollars to Naira</h2>
-                <p>The rate of Dollar to Naira is 410.31</p>
+                <p>The rate of Dollar to Naira is 570.</p>
                 <h4>Convert your Dollar to Naira</h4>
-                <input type="text" id="field"> <br>
+                <input type="number" id="field" required> <br>
                 <button class="btn-conv" onclick="dToN()">Convert</button>
                 <p class="dollar-result"></p>
                 <div class="link">
@@ -40,11 +41,9 @@
                     Click arrow to convert Naira to Dollars
                 </div>
             </div>
-        </div>
-    </main>
-    <footer>
-        This website was made by Fexavier &copy; <span class="year"></span>
-    </footer>
+        </main>
+    </div>
+    <footer>This website was made by Fexavier &copy; <span class="year"></span></footer>
     <script type='text/javascript' src="main.js"></script>
 </body>
 </html>
